@@ -1,6 +1,9 @@
 function evalutateGame(event) {
 	if (event) {
 		event.preventDefault();
+		console.log(event);
+		var resultViewer = document.getElementById("results");
+		console.log(resultViewer)
 	}
 
 	console.log( "Evaluating Game!" );

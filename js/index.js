@@ -1,8 +1,19 @@
 function evalutateGame(event) {
 	if (event) {
 		event.preventDefault();
+		const winnerId = "map1"
 		console.log(event);
 		var resultViewer = document.getElementById("results");
+		if (resultViewer) {
+			if (winnerId === event.target.id) {
+			    resultViewer.innerText = event.target.id + " winner";
+			    } else {
+			    
+			    resultViewer.innerText = event.target.id + " no winner";
+			    }
+		
+		}
+		
 		console.log(resultViewer)
 	}
 
